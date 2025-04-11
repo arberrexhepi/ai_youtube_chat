@@ -1,0 +1,207 @@
+/* General Reset */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #0B0D10;
+    /* Very dark, cool black */
+    color: #D1D5DB;
+    /* Muted light gray for contrast */
+}
+
+/* Container Styling */
+.App {
+    max-width: 70vw;
+    width: 70vw;
+    margin: 20px auto;
+    padding: 20px;
+    background: #121418;
+    /* Slightly lighter than background for depth */
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+    /* Subtle shadow for depth */
+    overflow: hidden;
+    max-height: 80vh;
+    height: 80vh;
+    font-size: xx-large;
+}
+
+header {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #1F2227;
+    /* Subtle cool dark border for separation */
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #A3A8B0;
+    /* Muted cool gray for the header text */
+    margin: 0;
+}
+
+/* Chat Panel Styling */
+.chat-panel {
+    padding: 20px 10px;
+    max-height: 400px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #2C3138 #121418;
+    overflow-y: scroll;
+    height: 500px;
+    max-height: 500px;
+    padding-bottom: 20px;
+    font-size: x-large;
+    /* Dark cool tones for scrollbar */
+}
+
+.chat-panel::-webkit-scrollbar {
+    width: 8px;
+}
+
+.chat-panel::-webkit-scrollbar-thumb {
+    background: #2C3138;
+    /* Dark grayish blue for scrollbar */
+    border-radius: 4px;
+}
+
+.chat-panel::-webkit-scrollbar-track {
+    background: #121418;
+}
+
+/* Chat Message Styling */
+.chat-message {
+    margin-bottom: 12px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.chat-message.comment {
+    background-color: #16191E;
+    /* Very dark muted blue-gray for user comments */
+}
+
+.chat-message.llm-response {
+    background-color: #14171C;
+    /* Slightly darker cool tone for bot responses */
+}
+
+.chat-message:hover {
+    transform: scale(1.02);
+    background-color: #1D2128;
+    /* Slightly lighter tone for hover effect */
+}
+
+/* User Comment Text */
+.user-comment {
+    font-size: 1.95rem;
+    line-height: 1.4;
+    color: #D1D5DB;
+    /* Muted light gray for readability */
+}
+
+/* Username Styling */
+.username {
+    font-weight: bold;
+    color: #8FA3B7;
+    /* Muted cool steel blue for usernames */
+    margin-right: 5px;
+}
+
+/* Accent Colors for Interaction */
+.username:hover {
+    color: #A8C0D9;
+    /* Soft light blue-gray on hover for interactivity */
+}
+
+.chat-message.llm-response .username {
+    color: #A2B1C6;
+    /* Muted soft blue-gray for bot username */
+}
+
+/* Subscribe Banner */
+.subscribe-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1f2937;
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: #e5e7eb;
+    margin-bottom: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.subscribe-btn {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.subscribe-btn:hover {
+    background: #1e40af;
+}
+
+/* Milestone Tracker */
+.milestone-tracker {
+    margin: 15px 0;
+    padding: 10px 20px;
+    background: #111827;
+    border-radius: 8px;
+    color: #e5e7eb;
+}
+
+.progress-bar {
+    margin-top: 8px;
+    height: 10px;
+    background: #374151;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background: #10b981;
+    /* Green progress bar */
+    transition: width 0.3s ease;
+}
+
+/* Engagement Callout */
+.callout {
+    margin: 20px 0;
+    padding: 15px;
+    background: #1f2937;
+    border: 1px dashed #374151;
+    border-radius: 8px;
+    text-align: center;
+    color: #e5e7eb;
+}
+
+.callout p {
+    margin: 0 0 10px;
+}
+
+.share-btn {
+    background: #3b82f6;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.share-btn:hover {
+    background: #2563eb;
+}

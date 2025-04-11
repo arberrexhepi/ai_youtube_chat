@@ -1,0 +1,14 @@
+{
+  "name": "youtube-chat-backend",
+  "version": "1.0.0",
+  "main": "server.js",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "dotenv": "^16.4.7",
+    "express": "^4.17.1",
+    "ws": "^8.0.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  }
+}
